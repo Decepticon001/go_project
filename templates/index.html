@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#login").click(function () {
+                //aaaa
+                // $("#login").hide();
+                alert("登陆")
+            });
+            
+            // 开始写 jQuery 代码...
+
+        });
+        $("#login").onmouseenter(function () {
+            alert("登陆")
+        })
+    </script>
+</head>
+<body>
+    <div id="title">
+        博客
+    </div>
+    <div>
+        <form action="/art" method="post">
+            <input type="text" name="yb">
+            <input type="text" name="zh">
+            <input type="submit" value="提交">
+        </form></div>
+    <p>hello</p>
+    <div><button type="button" id="login">login</button></div>
+</body>
+</html>
